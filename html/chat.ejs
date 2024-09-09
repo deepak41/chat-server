@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Client</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="chat-page">
+      <div class="chat-container">
+        <div class="chat-header">Chat Room</div>
+        <div class="messages-container" id="messages"></div>
+        <div class="chat-input-container">
+          <input
+            type="text"
+            id="input"
+            placeholder="Type a message..."
+            autofocus
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      <p id="host" style="display:none;"><%= host %></p>
+      <p id="port" style="display:none;"><%= port %></p>
+    </div>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
