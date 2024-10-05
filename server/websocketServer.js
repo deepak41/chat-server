@@ -1,5 +1,5 @@
-const WebSocket = require('ws');
-const server = require('./httpServer'); // Import the HTTP server instance
+const WebSocket = require("ws");
+const server = require("./httpServer"); // Import the HTTP server instance
 
 // Create a WebSocket server instance
 const wss = new WebSocket.Server({ server });
@@ -8,12 +8,12 @@ const wss = new WebSocket.Server({ server });
 const clients = [];
 
 // Listen for WebSocket connection events
-wss.on('connection', (ws) => {
-  console.log('New client connected');
+wss.on("connection", (ws) => {
+  console.log("New client connected");
   clients.push(ws);
 
   // Listen for incoming messages from clients
-  ws.on('message', (message) => {
+  ws.on("message", (message) => {
     console.log(`Received: ${message}`);
 
     // Broadcast the message to all connected clients
@@ -25,8 +25,8 @@ wss.on('connection', (ws) => {
   });
 
   // Listen for close events
-  ws.on('close', () => {
-    console.log('Client disconnected');
+  ws.on("close", () => {
+    console.log("Client disconnected");
     const index = clients.indexOf(ws);
     if (index !== -1) {
       clients.splice(index, 1);
@@ -34,4 +34,4 @@ wss.on('connection', (ws) => {
   });
 });
 
-module.exports = server; 
+module.exports = server;

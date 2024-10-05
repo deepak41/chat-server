@@ -1,5 +1,5 @@
-require('dotenv').config();
-const server = require('./server/websocketServer');
+require("dotenv").config();
+const server = require("./server/websocketServer");
 
 // Start the server
 server.listen(process.env.PORT, () => {
