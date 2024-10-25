@@ -16,7 +16,7 @@ ws.onmessage = (event) => {
 ws.onclose = () => {
   console.log("Disconnected from the server");
 };hjfhjgjhghk
-
+jhkgfcgfhgvjk,bm
 function sendMessage() {
   const input = document.getElementById("input");
   ws.send(input.value);
