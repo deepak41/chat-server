@@ -1,8 +1,7 @@
 # Chat Server
 
 ![Static Badge](https://img.shields.io/badge/Node.js-v18.18.2-blue)
-![Static Badge](https://img.shields.io/badge/EJS-v3.1.10-gold)
-
+![Static Badge](https://img.shields.io/badge/EJS%20-v3.1.10-green?labelColor=red&color=gold)
 
 A real-time chat application using Node.js, Express.js and Websockets.
 
